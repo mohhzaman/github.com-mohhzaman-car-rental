@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #BF9B30;
+  --color-dark: #1A1A1A;
+  --color-cream: #F5F0E6;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-cream);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #BF9B30 0%, #F2D06B 50%, #BF9B30 100%);
+}
+
+.luxury-card {
+  background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(38, 38, 38, 0.8) 100%);
+  border: 1px solid rgba(191, 155, 48, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.luxury-button {
+  background: linear-gradient(135deg, #BF9B30 0%, #F2D06B 50%, #BF9B30 100%);
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+.luxury-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(191, 155, 48, 0.3);
+}
